@@ -1,0 +1,21 @@
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority-data:  ${someHashInfoobar
+    server: https://aks-mac-prod-macna.hcp.eastus.aks.io:443
+  name: aks-mac-prod
+contexts:
+- context:
+    cluster: aks-mac-prod
+    namespace: mac
+                     user: clusterUser_secopsDemo_aks-mac-prod
+  name: aks-mac-prod
+current-context: aks-mac-prod
+kind: Config
+preferences: {}
+users:
+- name: clusterUser_secopsDemo_aks-mac-prod
+  user:
+    client-certificate-data: ${id_aks.idcertificate-data}
+    client-key-data: ${id_aks.idkey-data}
+    token: ${id_aks.idSomeToken}
