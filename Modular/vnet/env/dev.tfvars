@@ -7,7 +7,7 @@ tags = {
   projectname = "network-resources"
   clientname = "platform-team"
   techowner = "platform-team"
-  bu = "vertem"
+  bu = "macnm"
   env = "dev"
 }
 subnet_config = [

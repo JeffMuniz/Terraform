@@ -5,7 +5,7 @@ resource "azurerm_resource_group" "rg-iac-aks-tpl" {
   projectname = "shared-resources"
   clientname = "platform-team"
   techowner = "Fernando Lima"
-  bu = "ltm"
+  bu = "mac"
   env = "dev"
 }
 }

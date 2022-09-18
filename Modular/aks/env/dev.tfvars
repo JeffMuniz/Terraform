@@ -1,6 +1,6 @@
 id_aks_name = "id-aks"
 agent_count = 1
-admin_username = "ltm"
+admin_username = "mac"
 ssh_public_key = "~/.ssh/id_rsa.pub"
 dns_prefix = "aks-macna"
 cluster_name = "aks-macna"
@@ -12,7 +12,7 @@ tags = {
   projectname = "shared-resources"
   clientname = "platform-team"
   techowner = "Fernando Lima"
-  bu = "ltm"
+  bu = "mac"
   env = "dev"
 }
 nsg_aks_name = "nsg-snet-aks"

@@ -5,6 +5,6 @@ tags = {
   projectname = "aks-shared-resources"
   clientname = "platform-team"
   techowner = "Fernando Lima"
-  bu = "ltm"
+  bu = "mac"
   env = "dev"
 }
