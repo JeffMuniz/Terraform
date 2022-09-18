@@ -7,7 +7,7 @@ clusters:
 contexts:
 - context:
     cluster: aks-macna-dev
-    namespace: omnilogic
+    namespace: macnaima
     user: clusterUser_rg-iac-aks-tpl_aks-macna-dev
   name: aks-macna-dev
 current-context: aks-macna-dev
