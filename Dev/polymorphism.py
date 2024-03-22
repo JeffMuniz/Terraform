@@ -1,8 +1,5 @@
- polymorphism in Python 
+# Method Overloading (Compile-time Polymorphism):
 
-Python Example:
-Method Overloading (Compile-time Polymorphism):
-python
 
 class Calculator:
     def add(self, a, b):
