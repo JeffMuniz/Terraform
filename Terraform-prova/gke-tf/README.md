@@ -9,6 +9,7 @@ Deploy app container
 # Start Houston we have a Go!
 gcloud init
 gcloud config get-value project
+choco install terraform minikube gcloudsdk docker-desktop -y
 # FromCloud SDK
 gcloud auth application-default login
 gcloud projects create gke-devops-07
@@ -159,13 +160,3 @@ locations:
 NOTE Replace 
 dos-terraform-edu-gke with the kubernetes_cluster_name value from your Terraform output.
 
-
-
-
-<br> 
-
-
-# Windows ajudante
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-</br>

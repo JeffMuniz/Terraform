@@ -84,7 +84,7 @@ resource "azurerm_subnet_network_security_group_association" "nsg-servers" {
 #   name                 = var.snet_aks_name
 #   resource_group_name  = data.azurerm_resource_group.rg_demo.name
 #   virtual_network_name = azurerm_virtual_network.vnet-core.name
-#   address_prefixes     = ["10.256.4.1/24"]
+#   address_prefixes     = ["10.254.1.0/24"]
 #   service_endpoints    = [ "Microsoft.Storage","Microsoft.Sql" ]
 # }
 

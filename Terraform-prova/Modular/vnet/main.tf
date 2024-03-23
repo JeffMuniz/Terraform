@@ -16,9 +16,9 @@ provider "azurerm" {
 
 terraform {
     backend "azurerm" {
-        resource_group_name  = "rg-network-resources"
-        storage_account_name = "stgmacnetresources"
-        container_name       = "tfstate-vnet"
-        key                  = "prod.vnet.tfstate"
+        resource_group_name  = "rg-iac-aks-tpl"
+        storage_account_name = "sanetiacakstpl"
+        container_name       = "ct-tfstate-vnet"
+        key                  = "dev.vnet.ct-tfstate"
     }
 }

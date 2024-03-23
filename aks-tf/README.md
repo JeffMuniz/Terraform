@@ -1,0 +1,31 @@
+# Requisitos de Arquitetura
+
+- ResourceGroup
+    - Name: rg-mac-wallet-dev
+    - Subscription: Grupomac_Desenvolvimento
+- ResourceGroup
+    - Name: rg-mac-wallet-prod
+    - Subscription: Grupomac_Producao
+- VNET
+    - ResourceName: vnet-mac-wallet-dev
+    - ResourceGroup: rg-mac-wallet-dev
+- Cluster AKS
+    - ResourceName: aks-mac-wallet-dev
+    - ResourceGroup: rg-mac-wallet-dev
+    - Single Node
+    - Namespaces
+        - accounting-ledger
+    - Ingress: nginx
+        - Acesso pela VPN
+    - Usuário
+        - Nome: devops-accounting-ledger
+        - Obs: Acesso full ao namespace de AccountingLedger
+    - Usuários para o time
+        - Obs: Acesso full ao cluster
+- Azure Container Registry (criar no resource group de prod)
+    - ResourceName: crmacwallet
+    - ResourceGroup: rg-mac-wallet
+    - Tier: Basic
+- DevOps Wallet
+    - Service Connection com acesso ao namespace accounting-ledger do aks "aks-mac-wallet-dev"
+    - Service Connection com acesso ao ACR "crmacwallet"
